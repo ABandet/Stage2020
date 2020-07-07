@@ -1,0 +1,7 @@
+chameleon_dtesting
+.vscode
+data/*
+img/*
+venv
+src/__pycache__
+

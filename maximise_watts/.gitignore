@@ -1,0 +1,4 @@
+venv
+data
+chameleon_?testing
+src/__pycache__
