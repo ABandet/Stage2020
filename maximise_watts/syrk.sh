@@ -8,7 +8,7 @@ echo 'NB,NT,TIME,POWER_CPU1,POWER_RAM1,POWER_CPU2,POWER_RAM2,POWER_GPU' > $OUT_F
 
 for i in `seq 500 50 1200`
 do
-    for j in `seq 45 1 70`
+    for j in `seq 35 2 70`
     do
         echo "Starting with NB=$i and NT=$j"
         ./chameleon_dtesting -H -o syrk_batch -n $i -i 1 -b $(( $j * $j * ($j-1) / 2  )) --nowarmup > $IN_FILE
