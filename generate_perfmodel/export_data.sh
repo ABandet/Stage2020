@@ -1,12 +1,12 @@
 #!/bin/bash
 
 
-gemm_model_s0=$(head -n 1 $HOME/for_model/gemm_batch-s0-$NB-$default)
-gemm_model_s1=$(head -n 1 $HOME/for_model/gemm_batch-s1-$NB-$default)
-trsm_model_s0=$(head -n 1 $HOME/for_model/trsm_batch-s0-$NB-$default)
-trsm_model_s1=$(head -n 1 $HOME/for_model/trsm_batch-s1-$NB-$default)
-syrk_model_s0=$(head -n 1 $HOME/for_model/syrk_batch-s0-$NB-$default)
-syrk_model_s1=$(head -n 1 $HOME/for_model/syrk_batch-s1-$NB-$default)
+gemm_model_s0=$(head -n 1 $HOME/for_model/gemm-s0-$NB)
+gemm_model_s1=$(head -n 1 $HOME/for_model/gemm-s1-$NB)
+trsm_model_s0=$(head -n 1 $HOME/for_model/trsm-s0-$NB)
+trsm_model_s1=$(head -n 1 $HOME/for_model/trsm-s1-$NB)
+syrk_model_s0=$(head -n 1 $HOME/for_model/syrk-s0-$NB)
+syrk_model_s1=$(head -n 1 $HOME/for_model/syrk-s1-$NB)
 
 export STARPU_POTRF_ENERGY_S0=$potrf_model_s0
 export STARPU_POTRF_ENERGY_S1=$potrf_model_s1
